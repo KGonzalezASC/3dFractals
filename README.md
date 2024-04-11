@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# IGME 531 Project 2
 
-Currently, two official plugins are available:
+This project showcases the implementation of recursive fractal patterns using React-Three-Fiber and React-Three-CSG to generate a 3D scene. Among these patterns is an implementation of a Pythagoras tree and an unused Sierpinski pyramid algorithm.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## Expanding the ESLint configuration
+- **Fractal Patterns**: The project explores various implementations of recursive fractal patterns.
+- **CSG Library**: The main component, `ResultTree`, utilizes the CSG (Constructive Solid Geometry) library to handle mesh returns.
+- **Pythagoras Tree**: The current implementation of the Pythagoras tree involves transforming ShapePaths into compatible buffer geometry. It merges all instances into one buffered instance and utilizes a secondary tree for subtraction.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Current Status
 
-- Configure the top-level `parserOptions` property like this:
+- **3D Printing Issues**: The project is currently encountering difficulties with 3D printing. However, the generated STL result appears clean.
+- **To Run the Project**: Use npm or bun to run the project.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+---
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Feel free to customize this README further according to your needs!
